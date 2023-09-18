@@ -1,3 +1,5 @@
+import Index from './pages/index.vue';
+
 import Home from './pages/home.vue';
 import PanelLeft from './pages/panel-left.vue';
 import PanelRight from './pages/panel-right.vue';
@@ -118,6 +120,10 @@ import NotFound from './pages/404.vue';
 // Pages
 export default [
   // Index page
+  {
+    path: '/index',
+    component: Index,
+  },
   {
     path: '/',
     component: Home,

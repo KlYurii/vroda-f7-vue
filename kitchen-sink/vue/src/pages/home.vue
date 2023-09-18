@@ -23,6 +23,14 @@
     </f7-navbar>
 
     <f7-list strong inset dividers-ios class="searchbar-hide-on-search">
+      <f7-list-item title="Index" link="/index/">
+        <template #media>
+          <f7-icon icon="icon-f7" />
+        </template>
+      </f7-list-item>
+    </f7-list>
+
+    <f7-list strong inset dividers-ios class="searchbar-hide-on-search">
       <f7-list-item title="About Framework7" link="/about/">
         <template #media>
           <f7-icon icon="icon-f7" />

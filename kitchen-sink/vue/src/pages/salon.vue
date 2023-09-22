@@ -1,13 +1,13 @@
 <template>
   <f7-page class="page-home bg-color-white" no-navbar>
     <div
-      :style="{ background: 'url(./img/bg.png) no-repeat center top', 'background-size': 'cover' }"
+      :style="{ background: 'url(./img/bg2.png) no-repeat center top', 'background-size': 'cover' }"
       class="page-bg"
     ></div>
     <f7-block strong class="base-content-block">
       <div
         :style="{
-          background: 'url(./img/avatar1.png) no-repeat center top',
+          background: 'url(./img/avatar8.png) no-repeat center top',
         }"
         class="avatar"
       ></div>
@@ -35,8 +35,8 @@
           <img src="img/avatar4.png" />
         </div>
       </div>
-      <f7-block-title class="text-align-center user-name">Володимир К.</f7-block-title>
-      <div class="block-subtitle">Масажист</div>
+      <f7-block-title class="text-align-center user-name">Скажені вуса</f7-block-title>
+      <div class="block-subtitle">Барбершоп</div>
       <div class="block-subtitle2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -58,15 +58,15 @@
             </clipPath>
           </defs>
         </svg>
-        <div>Кременчук, Крюківський</div>
+        <div>Кременчук, Шевченка 75 А</div>
       </div>
       <p class="block-p">
-        👋 Привіт! Я - Володимир. Кажуть, що я дивовижний масажист. Не вірите - замовте одну з моїх
-        послуг. Це короткий текст про майстра, який можна розгорнути... >
+        В нашому барбершопі працюють найкращі. Ми - переможці конкурсу Барбер 2023 💈. Зробимо вам кльову зачіску. А ще, кажуть що ми хороші співрозмовники... >
       </p>
 
       <div class="app-tabs">
         <f7-link tab-link="#tab-1" tab-link-active>Послуги</f7-link>
+        <f7-link tab-link="#tab-2">Оренда &nbsp;<f7-badge>36</f7-badge></f7-link>
         <f7-link tab-link="#tab-3">Відгуки &nbsp;<f7-badge>76</f7-badge></f7-link>
       </div>
 
@@ -174,22 +174,14 @@
             </div>
             <f7-link href="#" class="tag-link">Назва тегу для пошуку і каталогізації</f7-link>
           </div>
-
-          <div class="users-swiper">
-            <f7-block-title class="us-title"> Інші майстри в м. [Назва міста] </f7-block-title>
-
-            <swiper-container
-              :pagination="true"
-              class="us-container"
-              :space-between="16"
-              :slides-per-view="2"
-            >
-              <swiper-slide v-for="(user, ind) in users" :key="`slide-${ind}`">
-                <user-list v-bind="user" />
-              </swiper-slide>
-            </swiper-container>
-          </div>
         </f7-tab>
+        <f7-tab id="tab-2" class="page-content"
+          ><p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quasi architecto
+            temporibus aliquam sequi laboriosam quis? Rem tempora, eveniet, officia laudantium id,
+            nobis corporis quod laboriosam quidem eligendi aliquam veritatis.
+          </p></f7-tab
+        >
         <f7-tab id="tab-3" class="page-content">
           <div class="block-sort">
             <div class="bl-ru-left">
@@ -320,108 +312,74 @@ export default {
     return {
       topServices: [
         {
-          name: 'Загальний масаж всього тіла. Розслабляючий і професійний',
-          image: '/img/service1.png',
+          name: 'Стрижка небезпечною бритвою для небезпечних',
+          image: '/img/service8.png',
           top: true,
           location: 'Київ, Святошинський',
-          price: '799 ₴',
-          service: 'Стрижка чоловіча',
-        },
-        {
-          name: 'Дискомфорт в області шиї? Вам до мене',
-          image: '/img/service2.png',
-          top: true,
-          location: 'Київ, Святошинський',
-          price: '500 ₴',
+          price: '370 ₴',
           service: 'Стрижка чоловіча',
         },
       ],
       services: [
         {
-          name: 'Масаж шийно-комірцевої зони',
-          image: '/img/service3.png',
-          location: 'Київ, Святошинський',
-          price: '357 ₴',
-          tag: 'Масаж шийно-комір...',
+          name: 'Стильна стрижка бороди, зручне розташування',
+          image: '/img/service6.png',
+          price: '3057 ₴',
+          tag: 'Тег послуг для пошук...',
         },
         {
-          name: 'Виконую масаж всього тіла пишіть в приватні',
-          image: '/img/service4.png',
-          location: 'Київ, Святошинський',
-          price: '90 ₴',
-          tag: 'Послуга тег для пош...',
+          name: 'Воскове видалення зайвого волосся',
+          image: '/img/service7.png',
+          price: '799 ₴',
+          tag: 'Стрижка чоловіча',
         },
         {
-          name: 'Масаж шийно-комірцевої зони',
-          image: '/img/service5.png',
-          location: 'Київ, Святошинський',
-          price: '510 ₴',
-          tag: 'Послуга тег для пош...',
+          name: 'Стильна стрижка бороди, зручне розташування',
+          image: '/img/service6.png',
+          price: '3057 ₴',
+          tag: 'Тег послуг для пошук...',
         },
         {
-          name: 'Масаж шийно-комірцевої зони',
-          image: '/img/service3.png',
-          location: 'Київ, Святошинський',
-          price: '357 ₴',
-          tag: 'Масаж шийно-комір...',
+          name: 'Воскове видалення зайвого волосся',
+          image: '/img/service7.png',
+          price: '799 ₴',
+          tag: 'Стрижка чоловіча',
         },
         {
-          name: 'Виконую масаж всього тіла пишіть в приватні',
-          image: '/img/service4.png',
-          location: 'Київ, Святошинський',
-          price: '90 ₴',
-          tag: 'Послуга тег для пош...',
+          name: 'Стильна стрижка бороди, зручне розташування',
+          image: '/img/service6.png',
+          price: '3057 ₴',
+          tag: 'Тег послуг для пошук...',
         },
         {
-          name: 'Масаж шийно-комірцевої зони',
-          image: '/img/service5.png',
-          location: 'Київ, Святошинський',
-          price: '510 ₴',
-          tag: 'Послуга тег для пош...',
+          name: 'Воскове видалення зайвого волосся',
+          image: '/img/service7.png',
+          price: '799 ₴',
+          tag: 'Стрижка чоловіча',
         },
         {
-          name: 'Масаж шийно-комірцевої зони',
-          image: '/img/service3.png',
-          location: 'Київ, Святошинський',
-          price: '357 ₴',
-          tag: 'Масаж шийно-комір...',
+          name: 'Стильна стрижка бороди, зручне розташування',
+          image: '/img/service6.png',
+          price: '3057 ₴',
+          tag: 'Тег послуг для пошук...',
         },
         {
-          name: 'Виконую масаж всього тіла пишіть в приватні',
-          image: '/img/service4.png',
-          location: 'Київ, Святошинський',
-          price: '90 ₴',
-          tag: 'Послуга тег для пош...',
-        },
-      ],
-      users: [
-        {
-          avatar: '/img/avatar6.png',
-          name: 'Віталій Станіславович',
-          profession: 'Барбер',
-          raiting: '😍 5.0',
-          reviews: '155 відгуків',
+          name: 'Воскове видалення зайвого волосся',
+          image: '/img/service7.png',
+          price: '799 ₴',
+          tag: 'Стрижка чоловіча',
         },
         {
-          avatar: '/img/avatar7.png',
-          name: 'Мар’яна Л.',
-          profession: 'Косметолог',
-          raiting: '😍 5.0',
-          reviews: '39 відгуків',
+          name: 'Стильна стрижка бороди, зручне розташування',
+          image: '/img/service6.png',
+          price: '3057 ₴',
+          tag: 'Тег послуг для пошук...',
         },
         {
-          avatar: '/img/avatar6.png',
-          name: 'Віталій Станіславович',
-          profession: 'Барбер',
-          raiting: '😍 5.0',
-          reviews: '155 відгуків',
-        },
-        {
-          avatar: '/img/avatar7.png',
-          name: 'Мар’яна Л.',
-          profession: 'Косметолог',
-          raiting: '😍 5.0',
-          reviews: '39 відгуків',
+          name: 'Воскове видалення зайвого волосся',
+          image: '/img/service7.png',
+          price: '799 ₴',
+          tag: 'Стрижка чоловіча',
         },
       ],
       reviews: [
@@ -477,6 +435,5 @@ export default {
 </script>
 
 <style>
-@import url('../assets/css/base.css');
 @import url('../assets/css/home.css');
 </style>

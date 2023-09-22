@@ -1,0 +1,130 @@
+.user-services .input-dropdown select {
+  height: 56px;
+  background: #FFF;
+  padding: 0 40px 0 16px;
+  margin-bottom: 16px;
+  color: var(--Black-40-grey-labels, rgba(0, 0, 0, 0.40));
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+
+.user-services .input-outline::after {
+  border-radius: 8px;
+  top: 0;
+  bottom: 0;
+  border: 1px solid var(--Black-12-border, rgba(0, 0, 0, 0.12));
+}
+.user-services .input-dropdown:before {
+  border: none;
+  background:  url('/svg/arrow-down.svg') center center no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-top: 0;
+  transform: translateY(-50%);
+  right: 16px;
+}
+
+.user-services-strong .input-outline::after {
+  border: 2px solid var(--Black-80, rgba(0, 0, 0, 0.80));
+  box-shadow: 0px 4px 4px -2px rgba(24, 39, 75, 0.08), 0px 2px 4px -2px rgba(24, 39, 75, 0.12);
+}
+
+.user-services-strong .input-dropdown select {
+  color: var(--Black-100, #000);
+  font-weight: 600;
+}
+
+
+.segmented-black .button-active {
+
+}
+.segmented-black .button {
+  display: inline-flex;
+  height: 48px;
+  padding: 8px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--Black-5-bg, rgba(0, 0, 0, 0.05));
+  color: var(--Black-100, #000);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0 3px;
+}
+
+.segmented.segmented-black .button {
+  border-radius: 8px;
+  background: var(--Black-5-bg, rgba(0, 0, 0, 0.05));
+  display: inline-flex;
+  height: 48px;
+  padding: 8px;
+  align-items: center;
+  color: var(--Black-100, #000);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  box-sizing: border-box;
+  width: auto;
+  margin-bottom: 8px;
+}
+.segmented.segmented-black .button-active {
+  background: var(--Black-100, #000);
+  color: var(--White, #fff);
+  font-weight: 700;
+}
+
+.segmented.segmented-black .button:first-child,
+.segmented.segmented-black .button:last-child {
+  border-radius: 8px;
+}
+
+.list-block {
+  padding: 16px 0;
+  margin-bottom: 16px;
+}
+
+.list-block .block-title {
+  margin: 0;
+  padding: 0 0 13.5px 0;
+  color: var(--Rose-Red, #ED4457);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.list-block .list {
+  margin: 0;
+}
+
+.list-block .list .item-content {
+  padding-left: 0;
+}
+
+.list-block .list .item-inner {
+  padding-right: 0;
+  border-bottom: 1px solid var(--Black-12-border, rgba(0, 0, 0, 0.12));
+}
+
+.list-block .list .item-title {
+  color: var(--Black-100, #000);
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.list-block .list .item-footer {
+  color: var(--Black-40-grey-labels, rgba(0, 0, 0, 0.40));
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+}

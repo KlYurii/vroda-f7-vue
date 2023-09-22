@@ -1,128 +1,168 @@
 import Index from './pages/index.vue';
+import Salon from './pages/salon.vue';
+import NoMessages from './pages/no-messages.vue';
+import Dialogs from './pages/dialogs.vue';
+import UserDialog from './pages/user-dialog.vue';
+import Error500 from './pages/500.vue';
+import Filters from './pages/filters.vue';
+import Searching from './pages/searching.vue';
+import SkeletonExample from './pages/skeleton-example.vue';
 
 import Home from './pages/home.vue';
-import PanelLeft from './pages/panel-left.vue';
-import PanelRight from './pages/panel-right.vue';
-import About from './pages/about.vue';
+import PanelLeft from './pages/example/panel-left.vue';
+import PanelRight from './pages/example/panel-right.vue';
+import About from './pages/example/about.vue';
 
-import Accordion from './pages/accordion.vue';
-import ActionSheet from './pages/action-sheet.vue';
-import AreaChart from './pages/area-chart.vue';
-import Autocomplete from './pages/autocomplete.vue';
-import Badge from './pages/badge.vue';
-import Breadcrumbs from './pages/breadcrumbs.vue';
-import Buttons from './pages/buttons.vue';
-import Calendar from './pages/calendar.vue';
-import CalendarPage from './pages/calendar-page.vue';
-import Cards from './pages/cards.vue';
-import CardsExpandable from './pages/cards-expandable.vue';
-import Checkbox from './pages/checkbox.vue';
-import Chips from './pages/chips.vue';
-import ColorPicker from './pages/color-picker.vue';
-import ContactsList from './pages/contacts-list.vue';
-import ContentBlock from './pages/content-block.vue';
-import DataTable from './pages/data-table.vue';
-import Dialog from './pages/dialog.vue';
-import Fab from './pages/fab.vue';
-import FabMorph from './pages/fab-morph.vue';
-import FormStorage from './pages/form-storage.vue';
-import Gauge from './pages/gauge.vue';
-import Grid from './pages/grid.vue';
-import Icons from './pages/icons.vue';
-import InfiniteScroll from './pages/infinite-scroll.vue';
-import Inputs from './pages/inputs.vue';
-import ListButton from './pages/list-button.vue';
-import List from './pages/list.vue';
-import ListIndex from './pages/list-index.vue';
-import LoginScreen from './pages/login-screen.vue';
-import LoginScreenPage from './pages/login-screen-page.vue';
-import MenuList from './pages/menu-list.vue';
-import Messages from './pages/messages.vue';
-import Navbar from './pages/navbar.vue';
-import NavbarHideScroll from './pages/navbar-hide-scroll.vue';
-import Notifications from './pages/notifications.vue';
-import Panel from './pages/panel.vue';
-import PhotoBrowser from './pages/photo-browser.vue';
-import Picker from './pages/picker.vue';
-import PieChart from './pages/pie-chart.vue';
-import Popup from './pages/popup.vue';
-import Popover from './pages/popover.vue';
-import Preloader from './pages/preloader.vue';
-import Progressbar from './pages/progressbar.vue';
-import PullToRefresh from './pages/pull-to-refresh.vue';
-import Radio from './pages/radio.vue';
-import Range from './pages/range.vue';
-import Searchbar from './pages/searchbar.vue';
-import SearchbarExpandable from './pages/searchbar-expandable.vue';
-import Segmented from './pages/segmented.vue';
-import SheetModal from './pages/sheet-modal.vue';
-import Skeleton from './pages/skeleton.vue';
-import SmartSelect from './pages/smart-select.vue';
-import Sortable from './pages/sortable.vue';
-import Stepper from './pages/stepper.vue';
-import Subnavbar from './pages/subnavbar.vue';
-import SubnavbarTitle from './pages/subnavbar-title.vue';
-import Swiper from './pages/swiper.vue';
-import SwiperHorizontal from './pages/swiper-horizontal.vue';
-import SwiperVertical from './pages/swiper-vertical.vue';
-import SwiperSpaceBetween from './pages/swiper-space-between.vue';
-import SwiperMultiple from './pages/swiper-multiple.vue';
-import SwiperNested from './pages/swiper-nested.vue';
-import SwiperLoop from './pages/swiper-loop.vue';
-import Swiper3dCube from './pages/swiper-3d-cube.vue';
-import Swiper3dCoverflow from './pages/swiper-3d-coverflow.vue';
-import Swiper3dFlip from './pages/swiper-3d-flip.vue';
-import SwiperFade from './pages/swiper-fade.vue';
-import SwiperScrollbar from './pages/swiper-scrollbar.vue';
-import SwiperGallery from './pages/swiper-gallery.vue';
-import SwiperParallax from './pages/swiper-parallax.vue';
-import SwiperLazy from './pages/swiper-lazy.vue';
-import SwiperPaginationProgress from './pages/swiper-pagination-progress.vue';
-import SwiperPaginationFraction from './pages/swiper-pagination-fraction.vue';
-import SwiperZoom from './pages/swiper-zoom.vue';
-import Swipeout from './pages/swipeout.vue';
-import Tabs from './pages/tabs.vue';
-import TabsStatic from './pages/tabs-static.vue';
-import TabsAnimated from './pages/tabs-animated.vue';
-import TabsSwipeable from './pages/tabs-swipeable.vue';
-import TabsRoutable from './pages/tabs-routable.vue';
-import TextEditor from './pages/text-editor.vue';
-import Toast from './pages/toast.vue';
-import Toggle from './pages/toggle.vue';
-import ToolbarTabbar from './pages/toolbar-tabbar.vue';
-import Tabbar from './pages/tabbar.vue';
-import TabbarIcons from './pages/tabbar-icons.vue';
-import TabbarScrollable from './pages/tabbar-scrollable.vue';
-import ToolbarHideScroll from './pages/toolbar-hide-scroll.vue';
-import Tooltip from './pages/tooltip.vue';
-import Timeline from './pages/timeline.vue';
-import TimelineVertical from './pages/timeline-vertical.vue';
-import TimelineHorizontal from './pages/timeline-horizontal.vue';
-import TimelineHorizontalCalendar from './pages/timeline-horizontal-calendar.vue';
-import Treeview from './pages/treeview.vue';
-import VirtualList from './pages/virtual-list.vue';
-import ColorThemes from './pages/color-themes.vue';
+import Accordion from './pages/example/accordion.vue';
+import ActionSheet from './pages/example/action-sheet.vue';
+import AreaChart from './pages/example/area-chart.vue';
+import Autocomplete from './pages/example/autocomplete.vue';
+import Badge from './pages/example/badge.vue';
+import Breadcrumbs from './pages/example/breadcrumbs.vue';
+import Buttons from './pages/example/buttons.vue';
+import Calendar from './pages/example/calendar.vue';
+import CalendarPage from './pages/example/calendar-page.vue';
+import Cards from './pages/example/cards.vue';
+import CardsExpandable from './pages/example/cards-expandable.vue';
+import Checkbox from './pages/example/checkbox.vue';
+import Chips from './pages/example/chips.vue';
+import ColorPicker from './pages/example/color-picker.vue';
+import ContactsList from './pages/example/contacts-list.vue';
+import ContentBlock from './pages/example/content-block.vue';
+import DataTable from './pages/example/data-table.vue';
+import Dialog from './pages/example/dialog.vue';
+import Fab from './pages/example/fab.vue';
+import FabMorph from './pages/example/fab-morph.vue';
+import FormStorage from './pages/example/form-storage.vue';
+import Gauge from './pages/example/gauge.vue';
+import Grid from './pages/example/grid.vue';
+import Icons from './pages/example/icons.vue';
+import InfiniteScroll from './pages/example/infinite-scroll.vue';
+import Inputs from './pages/example/inputs.vue';
+import ListButton from './pages/example/list-button.vue';
+import List from './pages/example/list.vue';
+import ListIndex from './pages/example/list-index.vue';
+import LoginScreen from './pages/example/login-screen.vue';
+import LoginScreenPage from './pages/example/login-screen-page.vue';
+import MenuList from './pages/example/menu-list.vue';
+import Messages from './pages/example/messages.vue';
+import Navbar from './pages/example/navbar.vue';
+import NavbarHideScroll from './pages/example/navbar-hide-scroll.vue';
+import Notifications from './pages/example/notifications.vue';
+import Panel from './pages/example/panel.vue';
+import PhotoBrowser from './pages/example/photo-browser.vue';
+import Picker from './pages/example/picker.vue';
+import PieChart from './pages/example/pie-chart.vue';
+import Popup from './pages/example/popup.vue';
+import Popover from './pages/example/popover.vue';
+import Preloader from './pages/example/preloader.vue';
+import Progressbar from './pages/example/progressbar.vue';
+import PullToRefresh from './pages/example/pull-to-refresh.vue';
+import Radio from './pages/example/radio.vue';
+import Range from './pages/example/range.vue';
+import Searchbar from './pages/example/searchbar.vue';
+import SearchbarExpandable from './pages/example/searchbar-expandable.vue';
+import Segmented from './pages/example/segmented.vue';
+import SheetModal from './pages/example/sheet-modal.vue';
+import Skeleton from './pages/example/skeleton.vue';
+import SmartSelect from './pages/example/smart-select.vue';
+import Sortable from './pages/example/sortable.vue';
+import Stepper from './pages/example/stepper.vue';
+import Subnavbar from './pages/example/subnavbar.vue';
+import SubnavbarTitle from './pages/example/subnavbar-title.vue';
+import Swiper from './pages/example/swiper.vue';
+import SwiperHorizontal from './pages/example/swiper-horizontal.vue';
+import SwiperVertical from './pages/example/swiper-vertical.vue';
+import SwiperSpaceBetween from './pages/example/swiper-space-between.vue';
+import SwiperMultiple from './pages/example/swiper-multiple.vue';
+import SwiperNested from './pages/example/swiper-nested.vue';
+import SwiperLoop from './pages/example/swiper-loop.vue';
+import Swiper3dCube from './pages/example/swiper-3d-cube.vue';
+import Swiper3dCoverflow from './pages/example/swiper-3d-coverflow.vue';
+import Swiper3dFlip from './pages/example/swiper-3d-flip.vue';
+import SwiperFade from './pages/example/swiper-fade.vue';
+import SwiperScrollbar from './pages/example/swiper-scrollbar.vue';
+import SwiperGallery from './pages/example/swiper-gallery.vue';
+import SwiperParallax from './pages/example/swiper-parallax.vue';
+import SwiperLazy from './pages/example/swiper-lazy.vue';
+import SwiperPaginationProgress from './pages/example/swiper-pagination-progress.vue';
+import SwiperPaginationFraction from './pages/example/swiper-pagination-fraction.vue';
+import SwiperZoom from './pages/example/swiper-zoom.vue';
+import Swipeout from './pages/example/swipeout.vue';
+import Tabs from './pages/example/tabs.vue';
+import TabsStatic from './pages/example/tabs-static.vue';
+import TabsAnimated from './pages/example/tabs-animated.vue';
+import TabsSwipeable from './pages/example/tabs-swipeable.vue';
+import TabsRoutable from './pages/example/tabs-routable.vue';
+import TextEditor from './pages/example/text-editor.vue';
+import Toast from './pages/example/toast.vue';
+import Toggle from './pages/example/toggle.vue';
+import ToolbarTabbar from './pages/example/toolbar-tabbar.vue';
+import Tabbar from './pages/example/tabbar.vue';
+import TabbarIcons from './pages/example/tabbar-icons.vue';
+import TabbarScrollable from './pages/example/tabbar-scrollable.vue';
+import ToolbarHideScroll from './pages/example/toolbar-hide-scroll.vue';
+import Tooltip from './pages/example/tooltip.vue';
+import Timeline from './pages/example/timeline.vue';
+import TimelineVertical from './pages/example/timeline-vertical.vue';
+import TimelineHorizontal from './pages/example/timeline-horizontal.vue';
+import TimelineHorizontalCalendar from './pages/example/timeline-horizontal-calendar.vue';
+import Treeview from './pages/example/treeview.vue';
+import VirtualList from './pages/example/virtual-list.vue';
+import ColorThemes from './pages/example/color-themes.vue';
 
-import PageTransitions from './pages/page-transitions.vue';
-import PageTransitionsEffect from './pages/page-transitions-effect.vue';
+import PageTransitions from './pages/example/page-transitions.vue';
+import PageTransitionsEffect from './pages/example/page-transitions-effect.vue';
 
-import RoutableModals from './pages/routable-modals.vue';
-import RoutablePopup from './pages/routable-popup.vue';
-import RoutableActions from './pages/routable-actions.vue';
+import RoutableModals from './pages/example/routable-modals.vue';
+import RoutablePopup from './pages/example/routable-popup.vue';
+import RoutableActions from './pages/example/routable-actions.vue';
 
-import MasterDetailMaster from './pages/master-detail-master.vue';
-import MasterDetailDetail from './pages/master-detail-detail.vue';
+import MasterDetailMaster from './pages/example/master-detail-master.vue';
+import MasterDetailDetail from './pages/example/master-detail-detail.vue';
 
-import Store from './pages/store.vue';
+import Store from './pages/example/store.vue';
 
-import NotFound from './pages/404.vue';
+import NotFound from './pages/example/404.vue';
 
 // Pages
 export default [
   // Index page
   {
-    path: '/index',
+    path: '/index/',
     component: Index,
+  },
+  {
+    path: '/salon/',
+    component: Salon,
+  },
+  {
+    path: '/no-messages/',
+    component: NoMessages,
+  },
+  {
+    path: '/dialogs/',
+    component: Dialogs,
+  },
+  {
+    path: '/dialog/:id/',
+    component: UserDialog,
+  },
+  {
+    path: '/500/',
+    component: Error500,
+  },
+  {
+    path: '/filters/',
+    component: Filters,
+  },
+  {
+    path: '/searching/',
+    component: Searching,
+  },
+  {
+    path: '/skeleton-example/',
+    component: SkeletonExample,
   },
   {
     path: '/',
